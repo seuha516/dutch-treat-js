@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>DutchTreat</title>
+    <link rel="stylesheet" href="DutchTreat.css">
+    <script src="DutchTreat.js"></script>
+</head>
+<body>
+    <h1>Dutch Treat Calculator</h1>
+    <h3>간편한 1/n 정산 도우미</h3>
+    <input id="HowtouseButton" type="button" value="How to Use?" onclick="Howtouse()">
+    <input id="EditButton" type="button" value="Edit" onclick="Edit()">
+    <hr><br>
+    <div id="info">이름을 클릭하여 행이나 열 삭제 &nbsp;&nbsp;/ &nbsp;&nbsp;셀을 클릭하여 불참자 반영 및 해제</div>
+    <table id="MainTable">
+        <tr>
+            <td>항목 / 이름</td>
+            <td><input onclick="AddCol()" type="button" value="+"></td>
+        </tr>
+        <tr>
+            <td><input onclick="AddRow()" type="button" value="+"></td>
+        </tr>
+    </table>
+    <br><br><br>    
+    <input id="CalcButton" type="button" value="Calculate!" onclick="Calc()">
+    <div id="ResultPage">
+        <div>Result</div>
+        <input id="CloseButton" type="button" value="x" onclick="CloseResult()">
+        <input id="CopyButton" type="button" value="Copy" onclick="Copy()">
+        <div id="ResultText"></div>
+        <br>
+        <div id="Due">Detail</div>
+        <div id="DetailText"></div>
+    </div>
+</body> 
+</html>

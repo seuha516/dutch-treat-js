@@ -1,0 +1,139 @@
+*{
+    border-color: black;
+}
+td{
+    text-align: center;
+}
+input::placeholder{
+    color: #a3a3a3;
+}
+#MainTable td:first-child{
+    font-size: 21px;
+}
+#MainTable tr:first-child > td{
+    width: 1px;
+    height: 60px;
+}
+#MainTable tr:first-child > td > input{
+    width: 100px;
+    height: 40px;
+    border-style: solid;
+    font-size: 25px;
+    text-align: center;
+}
+#MainTable tr:first-child > td:last-child input[type="button"]{
+    width: 40px;
+    height: 40px;
+    border-style: dotted;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+#MainTable tr > td > input{
+    width: 150px;
+    height: 40px;
+    border-style: solid;
+    text-align: center;
+    font-size: 20px;
+}
+#MainTable tr:last-child > td > input[type="button"]{
+    border-style: dotted;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    width: 158px;
+    font-size: 30px;
+}
+#MainTable tr > td > input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+}
+#EditButton{
+    position: absolute;
+    left: 400px;
+    top: 80px;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+}
+#HowtouseButton{
+    position: absolute;
+    left: 290px;
+    top: 80px;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+}
+#CalcButton{
+    width: 450px;
+    height: 50px;
+    font-size: 25px;
+}
+#info{
+    position: relative;
+    margin-top: -25px;
+    visibility: hidden;
+    font-size: small;
+    font-weight: bold;
+}
+#ResultPage{
+    width: 550px;
+    height: 600px;
+    position: fixed;
+    border-style: outset;
+    border-radius: 15px;
+    padding: 20px;
+    top:50px;
+    left:50px;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: rgb(235, 235, 235);
+    visibility: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-color: white;
+}
+#ResultPage > div:first-child{
+    font-weight: 900;
+    font-size: 30px;
+}
+#Due{
+    font-weight: 700;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+#CloseButton{
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    position: fixed;
+    top: 75px;
+    left: 585px;
+}
+#CopyButton{
+    width: 70px;
+    height: 35px;
+    font-size: 20px;
+    position: fixed;
+    top: 75px;
+    left: 500px;
+}
+#DetailText{
+    font-size: 20px;
+    border: 20px;
+    margin-right: 20px;
+}
+.Longtext{
+    width: 1500px;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+.Longtext:last-child:after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: -20px;
+    width: 20px;
+    height: 20px;
+}
